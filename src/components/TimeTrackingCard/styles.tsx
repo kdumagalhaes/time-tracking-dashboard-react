@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { lighten } from "polished";
 
 interface Props {
-  headerBgColor: string;
+  headerBgColor?: string;
   headerIcon?: string;
 }
 
