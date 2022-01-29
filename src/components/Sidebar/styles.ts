@@ -6,4 +6,5 @@ export const Container = styled.aside`
   max-width: 255px;
   display: flex;
   flex-direction: column;
+  margin-right: 29px;
 `;

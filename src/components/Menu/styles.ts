@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100%;
   background: var(--neutral-dark-blue);
   padding: 40px 29px 29px 29px;
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
   position: relative;
-  top: -15px;
+  top: -20px;
   z-index: 0;
 
   .menu-list {
