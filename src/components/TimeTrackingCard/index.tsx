@@ -11,8 +11,51 @@ export const TimeTrackingCard = ({
   timeSpent,
   lastWeekTimeSpent,
 }: TimeTrackingCardProps) => {
+  let bgColor: string;
+  let icon: string;
+
+  switch (category) {
+    case "Work":
+      bgColor = "var(--primary-orange)";
+      icon = "icon-work.svg";
+      break;
+
+    case "Play":
+      bgColor = "var(--primary-soft-blue)";
+      icon = "icon-play.svg";
+      break;
+
+    case "Study":
+      bgColor = "var(--primary-pink)";
+      icon = "icon-study.svg";
+      break;
+
+    case "Exercise":
+      bgColor = "var(--primary-green)";
+      icon = "icon-exercise.svg";
+      break;
+
+    case "Social":
+      bgColor = "var(--primary-violet)";
+      icon = "icon-social.svg";
+      break;
+
+    case "Self Care":
+      bgColor = "var(--primary-yellow)";
+      icon = "icon-self-care.svg";
+      break;
+
+    default:
+      break;
+  }
+
+  const convertedTimeSpent: number = parseInt(timeSpent);
+  const convertedLastWeek: number = parseInt(lastWeekTimeSpent);
+  let hoursTextTimeSpent: string = convertedTimeSpent <= 1 ? "hr" : "hrs";
+  let hoursTextLastWeek: string = convertedLastWeek <= 1 ? "hr" : "hrs";
+
   return (
-    <Container>
+    <Container headerBgColor={bgColor} headerIcon={icon}>
       <div className="header-bg"></div>
       <div className="text-content">
         <div className="horizontal-container">
@@ -21,8 +64,14 @@ export const TimeTrackingCard = ({
             •••
           </a>
         </div>
-        <h2 className="time-spent">{timeSpent}hrs</h2>
-        <p className="last-week">Last Week - {lastWeekTimeSpent}hrs</p>
+        <h2 className="time-spent">
+          {timeSpent}
+          {hoursTextTimeSpent}
+        </h2>
+        <p className="last-week">
+          Last Week - {lastWeekTimeSpent}
+          {hoursTextLastWeek}
+        </p>
       </div>
     </Container>
   );
