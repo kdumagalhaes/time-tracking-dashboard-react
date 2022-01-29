@@ -6,23 +6,22 @@ export const Container = styled.div`
   height: 100%;
   max-width: 255px;
   max-height: 350px;
-  position: absolute;
-  z-index: 0;
   cursor: pointer;
+  margin-bottom: 50px;
+  position: relative;
 
   .header-bg {
     width: 100%;
+    max-width: 255px;
     height: 70px;
     background-color: var(--primary-orange);
     background-image: url("src/img/icon-work.svg");
     background-repeat: no-repeat;
     background-position-x: 160px;
     background-position-y: -10px;
-    position: relative;
-    top: 20px;
-    z-index: 1;
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
+    position: absolute;
   }
 
   .horizontal-container {
@@ -55,9 +54,9 @@ export const Container = styled.div`
     background: var(--neutral-dark-blue);
     border-radius: var(--border-radius);
     padding: 29px;
-    position: relative;
-    z-index: 2;
     transition: background 0.3s;
+    position: relative;
+    top: 50px;
 
     &:hover {
       background: ${lighten(0.2, "hsl(235, 46%, 20%)")};

@@ -42,6 +42,10 @@ ul {
     list-style: none;
 }
 
+body {
+    background: var(--neutral-darker-blue);
+}
+
 body, input, textarea, button {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
