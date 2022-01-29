@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import { lighten } from "polished";
 
-export const Container = styled.div`
+interface Props {
+  headerBgColor: string;
+  headerIcon?: string;
+}
+
+export const Container = styled.div<Props>`
   width: 100%;
   height: 100%;
   max-width: 255px;
@@ -14,8 +19,8 @@ export const Container = styled.div`
     width: 100%;
     max-width: 255px;
     height: 70px;
-    background-color: var(--primary-orange);
-    background-image: url("src/img/icon-work.svg");
+    background-color: ${({ headerBgColor }) => headerBgColor};
+    background-image: ${({ headerIcon }) => `url(src/img/${headerIcon})`};
     background-repeat: no-repeat;
     background-position-x: 160px;
     background-position-y: -10px;
