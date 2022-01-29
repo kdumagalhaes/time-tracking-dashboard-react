@@ -1,9 +1,12 @@
 import { GlobalStyle } from "./css/global";
 
+// components
+import { Sidebar } from "./components/Sidebar/index";
+
 const App = () => {
   return (
     <div>
-      <h1>salut, France !</h1>
+      <Sidebar />
       <GlobalStyle />
     </div>
   );

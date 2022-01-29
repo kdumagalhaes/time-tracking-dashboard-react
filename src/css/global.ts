@@ -20,6 +20,9 @@ export const GlobalStyle = createGlobalStyle`
     --mobile: 375px;
     --desktop: 1440px;
     --safe-area-padding: 0 40px 0 40px;
+
+    // border
+    --border-radius: 15px;
 }
 * {
     margin: 0;
