@@ -1,14 +1,12 @@
 import { GlobalStyle } from "./css/global";
 
 // components
-import { Sidebar } from "./components/Sidebar/index";
-import { TimeTrackingBoard } from "./components/TimeTrackingBoard";
+import { Home } from "./components/Home/index";
 
 const App = () => {
   return (
     <>
-      <Sidebar />
-      <TimeTrackingBoard />
+      <Home />
       <GlobalStyle />
     </>
   );

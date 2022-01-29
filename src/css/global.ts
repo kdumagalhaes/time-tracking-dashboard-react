@@ -44,6 +44,10 @@ ul {
 
 body {
     background: var(--neutral-darker-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body, input, textarea, button {
