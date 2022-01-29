@@ -6,6 +6,7 @@ export const Container = styled.div`
   background: var(--primary-blue);
   border-radius: var(--border-radius);
   padding: 29px;
+  z-index: 1;
 
   .profile-pic {
     width: 100%;

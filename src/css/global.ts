@@ -37,6 +37,11 @@ html {
         font-size: 87.;
     }
 }
+
+ul {
+    list-style: none;
+}
+
 body, input, textarea, button {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
