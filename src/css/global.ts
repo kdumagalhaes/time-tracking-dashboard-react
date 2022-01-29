@@ -20,6 +20,9 @@ export const GlobalStyle = createGlobalStyle`
     --mobile: 375px;
     --desktop: 1440px;
     --safe-area-padding: 0 40px 0 40px;
+
+    // border
+    --border-radius: 15px;
 }
 * {
     margin: 0;
@@ -34,6 +37,11 @@ html {
         font-size: 87.;
     }
 }
+
+ul {
+    list-style: none;
+}
+
 body, input, textarea, button {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
