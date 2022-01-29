@@ -11,8 +11,8 @@ export const TimeTrackingCard = ({
   timeSpent,
   lastWeekTimeSpent,
 }: TimeTrackingCardProps) => {
-  let bgColor: string;
-  let icon: string;
+  let bgColor: string | undefined;
+  let icon: string | undefined;
 
   switch (category) {
     case "Work":
