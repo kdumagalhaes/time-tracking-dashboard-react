@@ -17,27 +17,27 @@ export const TimeTrackingCard = ({
   switch (category) {
     case "Work":
       bgColor = "var(--primary-orange)";
-      icon = "icon-work.svg";
+      icon = "../../src/img/icon-work.svg";
       break;
 
     case "Play":
       bgColor = "var(--primary-soft-blue)";
-      icon = "icon-play.svg";
+      icon = "../../src/img/icon-play.svg";
       break;
 
     case "Study":
       bgColor = "var(--primary-pink)";
-      icon = "icon-study.svg";
+      icon = "../../src/img/icon-study.svg";
       break;
 
     case "Exercise":
       bgColor = "var(--primary-green)";
-      icon = "icon-exercise.svg";
+      icon = "../../src/img/icon-exercise.svg";
       break;
 
     case "Social":
       bgColor = "var(--primary-violet)";
-      icon = "icon-social.svg";
+      icon = "../../src/img/icon-social.svg";
       break;
 
     case "Self Care":

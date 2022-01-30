@@ -20,7 +20,7 @@ export const Container = styled.div<Props>`
     max-width: 255px;
     height: 70px;
     background-color: ${({ headerBgColor }) => headerBgColor};
-    background-image: ${({ headerIcon }) => `url(../../src/img/${headerIcon})`};
+    background-image: ${({ headerIcon }) => `url(${headerIcon})`};
     background-repeat: no-repeat;
     background-position-x: 160px;
     background-position-y: -10px;
