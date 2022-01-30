@@ -42,7 +42,7 @@ export const TimeTrackingCard = ({
 
     case "Self Care":
       bgColor = "var(--primary-yellow)";
-      icon = "icon-self-care.svg";
+      icon = "./../src/img/icon-self-care.svg";
       break;
 
     default:
@@ -55,8 +55,11 @@ export const TimeTrackingCard = ({
   let hoursTextLastWeek: string = convertedLastWeek <= 1 ? "hr" : "hrs";
 
   return (
-    <Container headerBgColor={bgColor} headerIcon={icon}>
-      <div className="header-bg"></div>
+    <Container headerBgColor={bgColor}>
+      <div
+        className="header-bg"
+        style={{ backgroundImage: `url(${icon})` }}
+      ></div>
       <div className="text-content">
         <div className="horizontal-container">
           <p className="category">{category}</p>
