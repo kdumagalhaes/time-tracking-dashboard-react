@@ -13,22 +13,15 @@ import data from "../../utils/data.json";
 
 interface TimeTrackingCardProps {
   category: string;
-  timeSpent: string;
-  lastWeekTimeSpent: string;
 }
 
-export const TimeTrackingCard = ({
-  category,
-  timeSpent,
-  lastWeekTimeSpent,
-}: TimeTrackingCardProps) => {
+export const TimeTrackingCard = ({ category }: TimeTrackingCardProps) => {
   let bgColor: string | undefined;
   let icon: string | undefined;
   let currentTimeframe: string = "daily";
   let timeSpentData!: number;
   let lastWeekTimeSpentData!: number;
   let categoryIndex!: number;
-  console.log(data);
 
   switch (category) {
     case "Work":
