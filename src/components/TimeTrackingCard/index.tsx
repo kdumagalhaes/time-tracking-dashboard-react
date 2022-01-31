@@ -1,5 +1,13 @@
 import { Container } from "./styles";
 
+// assets
+import exerciseIcon from "../../img/icon-exercise.svg";
+import playIcon from "../../img/icon-play.svg";
+import selfCareIcon from "../../img/icon-self-care.svg";
+import socialIcon from "../../img/icon-social.svg";
+import studyIcon from "../../img/icon-study.svg";
+import workIcon from "../../img/icon-work.svg";
+
 interface TimeTrackingCardProps {
   category: string;
   timeSpent: string;
@@ -17,32 +25,32 @@ export const TimeTrackingCard = ({
   switch (category) {
     case "Work":
       bgColor = "var(--primary-orange)";
-      icon = "icon-work.svg";
+      icon = workIcon;
       break;
 
     case "Play":
       bgColor = "var(--primary-soft-blue)";
-      icon = "icon-play.svg";
+      icon = playIcon;
       break;
 
     case "Study":
       bgColor = "var(--primary-pink)";
-      icon = "icon-study.svg";
+      icon = studyIcon;
       break;
 
     case "Exercise":
       bgColor = "var(--primary-green)";
-      icon = "icon-exercise.svg";
+      icon = exerciseIcon;
       break;
 
     case "Social":
       bgColor = "var(--primary-violet)";
-      icon = "icon-social.svg";
+      icon = socialIcon;
       break;
 
     case "Self Care":
       bgColor = "var(--primary-yellow)";
-      icon = "icon-self-care.svg";
+      icon = selfCareIcon;
       break;
 
     default:
