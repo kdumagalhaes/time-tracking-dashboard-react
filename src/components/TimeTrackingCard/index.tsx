@@ -1,4 +1,5 @@
 import { Container } from "./styles";
+import { useAppSelector } from "../../hooks/hooks";
 
 // assets
 import exerciseIcon from "../../img/icon-exercise.svg";
@@ -16,12 +17,14 @@ interface TimeTrackingCardProps {
 }
 
 export const TimeTrackingCard = ({ category }: TimeTrackingCardProps) => {
+  const timeframe = useAppSelector((state) => state.timeframe.timeframe);
   let bgColor: string | undefined;
   let icon: string | undefined;
-  let currentTimeframe: string = "daily";
+  let currentTimeframe: string = timeframe;
   let timeSpentData!: number;
   let lastWeekTimeSpentData!: number;
   let categoryIndex!: number;
+  // const currentTimeframe = useSelector((state) => state);
 
   switch (category) {
     case "Work":
