@@ -15,9 +15,18 @@ export const Container = styled.div<Props>`
   margin-bottom: 50px;
   position: relative;
 
+  @media (max-width: 480px) {
+    max-width: 100%;
+
+    .time-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
   .header-bg {
     width: 100%;
-    max-width: 255px;
     height: 70px;
     background-color: ${({ headerBgColor }) => headerBgColor};
     background-image: ${({ headerIcon }) => `url(${headerIcon})`};
@@ -27,6 +36,11 @@ export const Container = styled.div<Props>`
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
     position: absolute;
+
+    @media (max-width: 480px) {
+      background-position-x: 240px;
+      background-position-y: -10px;
+    }
   }
 
   .horizontal-container {
@@ -51,6 +65,10 @@ export const Container = styled.div<Props>`
     font-size: 3.7rem;
     font-weight: 300;
     margin-bottom: 10px;
+
+    @media (max-width: 480px) {
+      font-size: 2.1rem;
+    }
   }
 
   .text-content {
@@ -67,10 +85,18 @@ export const Container = styled.div<Props>`
       background: ${lighten(0.2, "hsl(235, 46%, 20%)")};
     }
 
+    @media (max-width: 480px) {
+      top: 40px;
+    }
+
     .last-week {
       color: var(--neutral-pale-blue);
       font-weight: 300;
       font-size: 1.02rem;
+
+      @media (max-width: 480px) {
+        font-size: 1rem;
+      }
     }
   }
 `;

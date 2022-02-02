@@ -100,14 +100,16 @@ export const TimeTrackingCard = ({ category }: TimeTrackingCardProps) => {
             •••
           </a>
         </div>
-        <h2 className="time-spent">
-          {timeSpentData}
-          {hoursTextTimeSpent}
-        </h2>
-        <p className="last-week">
-          Last Week - {lastWeekTimeSpentData}
-          {hoursTextLastWeek}
-        </p>
+        <div className="time-container">
+          <h2 className="time-spent">
+            {timeSpentData}
+            {hoursTextTimeSpent}
+          </h2>
+          <p className="last-week">
+            Last Week - {lastWeekTimeSpentData}
+            {hoursTextLastWeek}
+          </p>
+        </div>
       </div>
     </Container>
   );

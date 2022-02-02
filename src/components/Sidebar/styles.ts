@@ -7,4 +7,10 @@ export const Container = styled.aside`
   display: flex;
   flex-direction: column;
   margin-right: 29px;
+
+  @media (max-width: 480px) {
+    max-width: 100%;
+    padding: var(--safe-area-padding);
+    margin-top: 80px;
+  }
 `;
