@@ -1,7 +1,7 @@
 import { GlobalStyle } from "./css/global";
 
 // components
-import { Home } from "./components/Home/index";
+import { Home } from "./pages/Home/index";
 
 const App = () => {
   return (
