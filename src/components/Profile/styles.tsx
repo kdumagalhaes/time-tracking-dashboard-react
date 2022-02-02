@@ -9,18 +9,35 @@ export const Container = styled.div`
   padding: 29px;
   z-index: 1;
 
+  @media (max-width: 480px) {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
   .profile-pic {
     width: 100%;
     max-width: 85px;
     border-radius: 100%;
     border: 3px solid #fff;
     margin-bottom: 35px;
+
+    @media (max-width: 480px) {
+      max-width: 75px;
+      margin: 0 15px 0 0;
+    }
   }
 
   p {
     font-size: 0.9rem;
     color: var(--neutral-pale-blue);
     margin-bottom: 7px;
+
+    @media (max-width: 480px) {
+      margin-bottom: 0;
+    }
   }
 
   .profile-name {
@@ -28,5 +45,10 @@ export const Container = styled.div`
     font-size: 2.5rem;
     color: #fff;
     line-height: 2.8rem;
+
+    @media (max-width: 480px) {
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+    }
   }
 `;

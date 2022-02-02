@@ -10,7 +10,17 @@ export const Container = styled.div`
   top: -20px;
   z-index: 0;
 
+  @media (max-width: 480px) {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+
   .menu-list {
+    @media (max-width: 480px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
     li {
       margin-bottom: 20px;
 

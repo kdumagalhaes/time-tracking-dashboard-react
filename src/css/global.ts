@@ -17,9 +17,9 @@ export const GlobalStyle = createGlobalStyle`
     --neutral-pale-blue: hsl(236, 100%, 87%);
 
     // layout
-    --mobile: 375px;
+    --mobile: 480px;
     --desktop: 1440px;
-    --safe-area-padding: 0 40px 0 40px;
+    --safe-area-padding: 0 29px 0 29px;
 
     // border
     --border-radius: 15px;
@@ -48,6 +48,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 480px) {
+        height: 100%;
+    }
 }
 
 body, input, textarea, button {
