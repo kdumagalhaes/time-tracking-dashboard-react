@@ -10,10 +10,12 @@ export const Container = styled.div<Props>`
   width: 100%;
   height: 100%;
   max-width: 255px;
-  max-height: 350px;
   cursor: pointer;
-  margin-bottom: 50px;
   position: relative;
+
+  @media (max-width: 1100px) {
+    margin-bottom: 50px;
+  }
 
   @media (max-width: 480px) {
     max-width: 100%;
@@ -27,7 +29,7 @@ export const Container = styled.div<Props>`
 
   .header-bg {
     width: 100%;
-    height: 70px;
+    height: 65px;
     background-color: ${({ headerBgColor }) => headerBgColor};
     background-image: ${({ headerIcon }) => `url(${headerIcon})`};
     background-repeat: no-repeat;
@@ -47,7 +49,7 @@ export const Container = styled.div<Props>`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .category {
@@ -55,14 +57,8 @@ export const Container = styled.div<Props>`
     font-weight: 500;
   }
 
-  .options-link {
-    text-decoration: none;
-    color: var(--neutral-pale-blue);
-    font-size: 1.2rem;
-  }
-
   .time-spent {
-    font-size: 3.7rem;
+    font-size: 3.4rem;
     font-weight: 300;
     margin-bottom: 10px;
 
@@ -74,12 +70,13 @@ export const Container = styled.div<Props>`
   .text-content {
     color: #fff;
     width: 100%;
+    height: 204px;
     background: var(--neutral-dark-blue);
     border-radius: var(--border-radius);
     padding: 29px;
     transition: background 0.3s;
     position: relative;
-    top: 50px;
+    top: 45px;
 
     &:hover {
       background: ${lighten(0.2, "hsl(235, 46%, 20%)")};
@@ -92,7 +89,7 @@ export const Container = styled.div<Props>`
     .last-week {
       color: var(--neutral-pale-blue);
       font-weight: 300;
-      font-size: 1.02rem;
+      font-size: 0.95rem;
 
       @media (max-width: 480px) {
         font-size: 1rem;

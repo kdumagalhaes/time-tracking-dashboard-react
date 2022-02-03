@@ -1,8 +1,8 @@
 import { Container } from "./styles";
 
 // components
-import { Sidebar } from "../Sidebar/index";
-import { TimeTrackingBoard } from "../TimeTrackingBoard/index";
+import { Sidebar } from "../../components/Sidebar/index";
+import { TimeTrackingBoard } from "../../components/TimeTrackingBoard/index";
 
 export const Home = () => {
   return (

@@ -8,6 +8,7 @@ import selfCareIcon from "../../img/icon-self-care.svg";
 import socialIcon from "../../img/icon-social.svg";
 import studyIcon from "../../img/icon-study.svg";
 import workIcon from "../../img/icon-work.svg";
+import ellipsisIcon from "../../img/icon-ellipsis.svg";
 
 // utils
 import data from "../../utils/data.json";
@@ -24,7 +25,6 @@ export const TimeTrackingCard = ({ category }: TimeTrackingCardProps) => {
   let timeSpentData!: number;
   let lastWeekTimeSpentData!: number;
   let categoryIndex!: number;
-  // const currentTimeframe = useSelector((state) => state);
 
   switch (category) {
     case "Work":
@@ -97,7 +97,7 @@ export const TimeTrackingCard = ({ category }: TimeTrackingCardProps) => {
         <div className="horizontal-container">
           <p className="category">{category}</p>
           <a href="#" className="options-link">
-            •••
+            <img src={ellipsisIcon} alt="options" />
           </a>
         </div>
         <div className="time-container">

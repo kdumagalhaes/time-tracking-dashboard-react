@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 373px;
+  height: 355px;
   max-width: 255px;
   background: var(--primary-blue);
   border-radius: var(--border-radius);
-  padding: 29px;
+  padding: 35px 29px 29px 29px;
   z-index: 1;
 
   @media (max-width: 480px) {
@@ -33,7 +33,7 @@ export const Container = styled.div`
   p {
     font-size: 0.9rem;
     color: var(--neutral-pale-blue);
-    margin-bottom: 7px;
+    margin-bottom: 4px;
 
     @media (max-width: 480px) {
       margin-bottom: 0;
@@ -44,7 +44,7 @@ export const Container = styled.div`
     font-weight: 300;
     font-size: 2.5rem;
     color: #fff;
-    line-height: 2.8rem;
+    line-height: 3rem;
 
     @media (max-width: 480px) {
       font-size: 1.4rem;

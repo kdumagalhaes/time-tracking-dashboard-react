@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   background: var(--neutral-dark-blue);
-  padding: 40px 29px 29px 29px;
+  padding: 40px 31px 31px 31px;
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
   position: relative;
-  top: -20px;
+  top: -7px;
   z-index: 0;
 
   @media (max-width: 480px) {
