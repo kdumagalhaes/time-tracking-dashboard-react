@@ -21,9 +21,6 @@
     &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw/hub/time-tracking-dashboard-using-react-typescript-95AHn4jKr" target="_blank">Frontendmentor page</a>&nbsp;&nbsp;&nbsp;
 </p>
-
-<img alt="Shopping cart hook react" src="src/assets/images/screen-capture.webp" />
-
 ## :rocket: Technologies
 
 - [ReactJS](https://reactjs.org/)
