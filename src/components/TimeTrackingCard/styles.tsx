@@ -70,6 +70,7 @@ export const Container = styled.div<Props>`
   .text-content {
     color: #fff;
     width: 100%;
+    height: 204px;
     background: var(--neutral-dark-blue);
     border-radius: var(--border-radius);
     padding: 29px;

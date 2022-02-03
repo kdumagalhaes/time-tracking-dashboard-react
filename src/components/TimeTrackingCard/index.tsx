@@ -25,7 +25,6 @@ export const TimeTrackingCard = ({ category }: TimeTrackingCardProps) => {
   let timeSpentData!: number;
   let lastWeekTimeSpentData!: number;
   let categoryIndex!: number;
-  // const currentTimeframe = useSelector((state) => state);
 
   switch (category) {
     case "Work":
