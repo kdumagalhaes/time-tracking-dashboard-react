@@ -83,6 +83,7 @@ export const Container = styled.div<Props>`
     }
 
     @media (max-width: 480px) {
+      height: auto;
       top: 40px;
     }
 
