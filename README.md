@@ -21,6 +21,7 @@
     &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw/hub/time-tracking-dashboard-using-react-typescript-95AHn4jKr" target="_blank">Frontendmentor page</a>&nbsp;&nbsp;&nbsp;
 </p>
+
 ## :rocket: Technologies
 
 - [ReactJS](https://reactjs.org/)
