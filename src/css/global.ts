@@ -43,8 +43,9 @@ ul {
 }
 
 body {
-    background: var(--neutral-darker-blue);
+    width: 100%;
     height: 100vh;
+    background: var(--neutral-darker-blue);
     display: flex;
     justify-content: center;
     align-items: center;

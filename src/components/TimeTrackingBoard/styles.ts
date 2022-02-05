@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  height: auto;
+  width: 100%;
+  height: 100%;
+  max-height: 515px;
   display: grid;
   grid-template-columns: repeat(3, 255px);
   gap: 30px;
@@ -16,10 +18,10 @@ export const Container = styled.main`
 
   @media (max-width: 480px) {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 29px;
-    padding: var(--safe-area-padding);
   }
 `;

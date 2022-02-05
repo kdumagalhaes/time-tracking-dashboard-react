@@ -8,17 +8,15 @@ interface Props {
 
 export const Container = styled.div<Props>`
   width: 100%;
-  height: 100%;
+  height: 246px;
   max-width: 255px;
   cursor: pointer;
   position: relative;
 
-  @media (max-width: 1100px) {
-    margin-bottom: 50px;
-  }
-
   @media (max-width: 480px) {
     max-width: 100%;
+    margin-bottom: 40px;
+    height: auto;
 
     .time-container {
       display: flex;
@@ -70,7 +68,7 @@ export const Container = styled.div<Props>`
   .text-content {
     color: #fff;
     width: 100%;
-    height: 204px;
+    height: 196px;
     background: var(--neutral-dark-blue);
     border-radius: var(--border-radius);
     padding: 29px;
