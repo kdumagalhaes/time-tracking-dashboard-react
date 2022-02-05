@@ -6,13 +6,13 @@ export const Container = styled.div`
   padding: 40px 31px 31px 31px;
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
-  position: relative;
-  top: -7px;
+  position: absolute;
+  top: 340px;
   z-index: 0;
 
   @media (max-width: 480px) {
-    padding-bottom: 0;
-    margin-bottom: 20px;
+    top: 125px;
+    height: 90px;
   }
 
   .menu-list {
